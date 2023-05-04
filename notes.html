@@ -1,0 +1,14 @@
+<body>
+
+    <%- include('common/header')%>
+    <h2>Welcome <%= user.name %></h2>
+    <h3><%= user.email%></h3>
+    <h3><%= user.city%></h3>
+    <ul>
+        <% user.skills.forEach((item)=>{  %>
+            <li> <%= item %></li>
+          <% })%>
+    </ul>
+
+
+</body>
